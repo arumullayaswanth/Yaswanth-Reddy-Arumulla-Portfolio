@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3b6a964363.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo1.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience-section">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Engineer</p>
+            <h1>Hi, I'm <span>Yaswanth Reddy Arumulla</span><br>From India</h1>
+        </div>        
+    </div>
+</div> 
+<!-- ---------abount--------- --> 
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Passionate about Embedded Systems and Software Development, I specialize in AI automation, 
+                    cloud computing, and data engineering. With experience in Python, C, AWS, and embedded technologies,
+                    I thrive on building innovative solutions that bridge hardware and software. Always eager to learn and 
+                    explore new technologies to create impactful solutions. Driven by curiosity, I aim to solve real-world problems 
+                    through technology and innovation.</p>
+                    
+                    <div class="tab-titles">
+                       <p class="tab-links active-link" onclick="opentab('skills')"> Skills </p> 
+                       <p class="tab-links" onclick="opentab('certification')"> Certification </p> 
+                       <p class="tab-links" onclick="opentab('education')"> Education </p> 
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Operating Systems</span><br> Ubuntu, Redhat Linux, Centos, Windows. </li>
+                            <li><span>Version Control System Tools</span><br> Git, GitHub.</li>
+                            <li><span>Cloud Technologies:</span><br>Amazon Web Services, VMware. </li>
+                            <li><span>Web technologies</span><br>Apache, Nginx</li>
+                            <li><span>Programming/ Scripting Lang(s)</span><br>C, Python, HTML, Java Script  </li>
+                            <li><span>Databases</span><br>MySQL, MongoDB </li>
+                            <li><span>Hardware</span><br>Embedded System,Microcontroller,Single VLSI integrated circuit chip</li>
+                            <li><span>Tools</span><br>MATLAB, SPICE, LabView, ARM Keil, AMD Vivado.</li>
+                        </ul>
+                    </div>
+    
+                    <div class="tab-contents" id="certification">
+                        <h2><span>Certifications & Specializations</span></h2>
+                        <ul>
+                            <li>
+                                <span>📜</span> <strong>Python for AI & Data Science</strong>  
+                                <br> <em>Issued by Coursera (VIT-AP), 2024</em>
+                            </li>
+                            <li>
+                                <span>☁️</span> <strong>AWS Solutions Architect Associate</strong>  
+                                <br> <em>Certified by AWS, 2024</em>
+                            </li>
+                            <li>
+                                <span>🔧</span> <strong>Embedded Systems & IoT</strong>  
+                                <br> <em>Focused on Microcontrollers & Real-time Systems</em>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span><i class="fa-solid fa-graduation-cap"></i> Vellore Institute of Technology (VIT), Amaravati / August 2020 – July 2024 </span><br>Bachelor of Technology in Electronics and Communication Engineering (Embedded Systems) (GPA: 8.23 / 10.0) </li>
+                            <li><span><i class="fa-solid fa-school"></i> Sri Saraswathi Junior College, Ongole / April 2018 – February 2020  </span><br>Intermediate (Mathematics, Physics, and Chemistry) (GPA: 8.0 / 10.0) </li>
+                            <li><span><i class="fa-solid fa-school"></i> Sri Surya Vaidyanathan, Ongole / April 2017 – February 2018 </span><br> Secondary School Certificate (SSC) (GPA: 8.8 / 10.0) </li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ---------------- Experience HTML Code-------------- -->
+<div id="experience-section">
+    <div class="container">
+        <h1 class="section-title">My Experience</h1>
+        <div class="experience-list">
+            <div class="experience-item">
+                <div class="experience-header">
+                    <i class="fa-solid fa-microchip"></i>
+                    <h2>Skyline Software Solutions</h2>
+                </div>
+                <h3>Software Engineer Intern <span>(June 2021 – August 2021, Ongole, India)</span></h3>
+                <p class="short-description">Developed an AI-powered OCR system for medical transcripts, achieving faster and more accurate conversions.</p>
+
+                <!-- Hidden More Content -->
+                <div class="more-content">
+                    <h4>Project Overview:</h4>
+                    <p>Developed an AI-based Optical Character Recognition (OCR) tool for automating the conversion of medical transcripts into digital soft copies.</p>
+                    
+                    <h4>Key Achievements:</h4>
+                    <ul>
+                        <li>Achieved high accuracy in converting handwritten and hard form medical records.</li>
+                        <li>Enhanced speed, converting images to text within seconds.</li>
+                        <li>Implemented custom script automation for data preprocessing.</li>
+                        <li>Optimized hyperparameters to improve OCR model performance.</li>
+                        <li>Conducted manual & automated testing to ensure accuracy.</li>
+                    </ul>
+
+                    <h4>Skills & Technologies:</h4>
+                    <p><strong>Python, Unix, OCR, Image Processing, Manual & Automated Testing</strong></p>
+
+                    <h4>Company Address:</h4>
+                    <p>📍 Road No 13, Koppole Main Road, Opp. Anjaneya Swamy Temple, Koppole, Ongole, Narasa Puram, Andhra Pradesh 523001</p>
+                </div>
+
+                <!-- "See More" Button -->
+                <button class="see-more-btn" onclick="toggleContent(this)">See More</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ---------------- projects HTML Code-------------- -->
+
+
+<div id="projects">
+    <div class="container">
+     <h1 class="sub-title">My Projects</h1>
+     <div class="project-list">
+         <div class="project">
+             <!-- Wrap the image with a link -->
+             <a href="https://github.com/arumullayaswanth/Smart-Robot-Car-Using-Arduion" target="_blank">
+                 <img src="images/1.jpg" alt="Arduino-Powered Intelligent Robotic Car">
+             </a>
+             <div class="layer">
+                 <h3>Arduino-Powered Intelligent Robotic Car</h3>
+                 <p>Arduino-Powered Intelligent Robotic Car – Developed a smart robotic car using Arduino, ultrasonic sensors, and 
+                     C programming, enabling obstacle detection and autonomous navigation with real-time decision-making. 🚗💡</p>
+                 <a href="https://github.com/arumullayaswanth/Smart-Robot-Car-Using-Arduion" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>    
+             </div>
+         </div>
+         <div class="project">
+             <!-- Wrap the image with a link -->
+             <a href="https://github.com/arumullayaswanth" target="_blank">
+                 <img src="images/2.png" alt="Data Pipeline Implementation">
+             </a>
+             <div class="layer">
+                 <h3>Data Pipeline Implementation</h3>
+                 <p>Data Pipeline Implementation – Designed a scalable ETL pipeline with AWS Glue, PySpark, and S3 to process, store, and catalog data, optimizing performance via CloudWatch and automating workflows, reducing manual effort by 90%. 📊🚀</p>
+                 <a href="https://github.com/arumullayaswanth" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>    
+             </div>
+         </div>
+         <div class="project">
+             <!-- Wrap the image with a link -->
+             <a href="https://github.com/arumullayaswanth" target="_blank">
+                 <img src="images/3.png" alt="Cloud-Based Web Application Deployment">
+             </a>
+             <div class="layer">
+                 <h3>Cloud-Based Web Application Deployment </h3>
+                 <p>Cloud-Based Web Application Deployment – Deployed a web app on AWS, integrating EC2, RDS MySQL, EFS, and S3 for scalability, security, and content delivery, while configuring Load Balancer, Auto Scaling, and optimizing Apache & PHP for seamless performance. ☁️💻</p>
+                 <a href="https://github.com/arumullayaswanth" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>    
+             </div>
+         </div>
+     </div>
+     <a href="#" class="btn">See more</a>
+    </div>
+ </div>
+
+
+<!-- ---------------- Contact HTML Code-------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> yaswanth.arumulla@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91 9959148343</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/yaswanth-arumulla" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/arumullayaswanth" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/?lang=en&mx=2" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="images/yaswanth-Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p><i class="fa-solid fa-copyright"></i> copyright 2025 Arumulla Yaswanth Reddy <i class="fa-solid fa-heart"></i> All rights reserved.</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+<!-- ------------------javascript---------------- -->
+<script>
+    /*--------------------About Me javascript Code----------------*/
+
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+    /*------------------Experience javascript Code----------------*/
+
+    function toggleContent(button) {
+    let content = button.previousElementSibling; // Select .more-content
+
+    if (content.style.display === "block") {
+        content.style.display = "none";
+        button.textContent = "See More"; // Change button text
+    } else {
+        content.style.display = "block";
+        button.textContent = "See Less"; // Change button text
+    }
+}
+
+
+/*------------------Projects javascript Code---------------------*/
+/*------------------Contact javascript Code---------------------*/
+
+
+</script>
+
+<!---------------------javascript for small screens------------>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0"
+    }
+    function closemenu(){
+        sidemenu.style.right = "-220px";
+    }
+
+
+</script>
+<!---------------------Message for small screens------------>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzJ0rYj0ZvuWFaENAVLHlf2Rd78J-emEDaoaxpRBTfbcri-jsX_24qwPffYBySQX1U/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!";
+            setTimeout(function () {
+                msg.innerHTML = ""; // Clear message after 5 seconds
+                }, 5000);
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+
+</script>
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,453 @@
+<<<<<<< HEAD
+<!-- ---------------- projects HTML Code-------------- -->
+
+
+<div id="projects">
+    <div class="container">
+     <h1 class="sub-title">My Projects</h1>
+     <div class="project-list">
+         <div class="project">
+             <!-- Wrap the image with a link -->
+             <a href="https://github.com/arumullayaswanth/Smart-Robot-Car-Using-Arduion" target="_blank">
+                 <img src="images/1.jpg" alt="Arduino-Powered Intelligent Robotic Car">
+             </a>
+             <div class="layer">
+                 <h3>Arduino-Powered Intelligent Robotic Car</h3>
+                 <p>Arduino-Powered Intelligent Robotic Car – Developed a smart robotic car using Arduino, ultrasonic sensors, and 
+                     C programming, enabling obstacle detection and autonomous navigation with real-time decision-making. 🚗💡</p>
+                 <a href="https://github.com/arumullayaswanth/Smart-Robot-Car-Using-Arduion" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>    
+             </div>
+         </div>
+         <div class="project">
+             <!-- Wrap the image with a link -->
+             <a href="https://github.com/arumullayaswanth" target="_blank">
+                 <img src="images/2.png" alt="Data Pipeline Implementation">
+             </a>
+             <div class="layer">
+                 <h3>Data Pipeline Implementation</h3>
+                 <p>Data Pipeline Implementation – Designed a scalable ETL pipeline with AWS Glue, PySpark, and S3 to process, store, and catalog data, optimizing performance via CloudWatch and automating workflows, reducing manual effort by 90%. 📊🚀</p>
+                 <a href="https://github.com/arumullayaswanth" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>    
+             </div>
+         </div>
+         <div class="project">
+             <!-- Wrap the image with a link -->
+             <a href="https://github.com/arumullayaswanth" target="_blank">
+                 <img src="images/3.png" alt="Cloud-Based Web Application Deployment">
+             </a>
+             <div class="layer">
+                 <h3>Cloud-Based Web Application Deployment </h3>
+                 <p>Cloud-Based Web Application Deployment – Deployed a web app on AWS, integrating EC2, RDS MySQL, EFS, and S3 for scalability, security, and content delivery, while configuring Load Balancer, Auto Scaling, and optimizing Apache & PHP for seamless performance. ☁️💻</p>
+                 <a href="https://github.com/arumullayaswanth" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>    
+             </div>
+         </div>
+     </div>
+     <a href="#" class="btn">See more</a>
+    </div>
+ </div>
+
+
+
+/*------------------Projects HTML Code---------------------*/
+
+#projects {
+    padding: 50px 0;
+    background: #121212; /* Dark theme */
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.project {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: adds some shadow for better contrast */
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer {
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f); /* Fixed the issue with the rgba value */
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s; /* Corrected 'heignt' to 'height' */
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #fff; /* Ensures visibility of text */
+}
+
+.layer p {
+    font-size: 14px;
+    color: #fff; /* Ensures paragraph text is readable */
+    margin-bottom: 15px;
+}
+
+.layer a {
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.layer a:hover {
+    background-color: #ff004f;
+    color: #fff;
+}
+
+.project:hover img {
+    transform: scale(1.1);
+}
+
+.project:hover .layer {
+    height: 100%;
+}
+
+.btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background: #ff004f;
+}
+=======
+<<<<<<< HEAD
+<!-- ---------------- projects HTML Code-------------- -->
+
+
+<div id="projects">
+    <div class="container">
+     <h1 class="sub-title">My Projects</h1>
+     <div class="project-list">
+         <div class="project">
+             <!-- Wrap the image with a link -->
+             <a href="https://github.com/arumullayaswanth/Smart-Robot-Car-Using-Arduion" target="_blank">
+                 <img src="images/1.jpg" alt="Arduino-Powered Intelligent Robotic Car">
+             </a>
+             <div class="layer">
+                 <h3>Arduino-Powered Intelligent Robotic Car</h3>
+                 <p>Arduino-Powered Intelligent Robotic Car – Developed a smart robotic car using Arduino, ultrasonic sensors, and 
+                     C programming, enabling obstacle detection and autonomous navigation with real-time decision-making. 🚗💡</p>
+                 <a href="https://github.com/arumullayaswanth/Smart-Robot-Car-Using-Arduion" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>    
+             </div>
+         </div>
+         <div class="project">
+             <!-- Wrap the image with a link -->
+             <a href="https://github.com/arumullayaswanth" target="_blank">
+                 <img src="images/2.png" alt="Data Pipeline Implementation">
+             </a>
+             <div class="layer">
+                 <h3>Data Pipeline Implementation</h3>
+                 <p>Data Pipeline Implementation – Designed a scalable ETL pipeline with AWS Glue, PySpark, and S3 to process, store, and catalog data, optimizing performance via CloudWatch and automating workflows, reducing manual effort by 90%. 📊🚀</p>
+                 <a href="https://github.com/arumullayaswanth" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>    
+             </div>
+         </div>
+         <div class="project">
+             <!-- Wrap the image with a link -->
+             <a href="https://github.com/arumullayaswanth" target="_blank">
+                 <img src="images/3.png" alt="Cloud-Based Web Application Deployment">
+             </a>
+             <div class="layer">
+                 <h3>Cloud-Based Web Application Deployment </h3>
+                 <p>Cloud-Based Web Application Deployment – Deployed a web app on AWS, integrating EC2, RDS MySQL, EFS, and S3 for scalability, security, and content delivery, while configuring Load Balancer, Auto Scaling, and optimizing Apache & PHP for seamless performance. ☁️💻</p>
+                 <a href="https://github.com/arumullayaswanth" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>    
+             </div>
+         </div>
+     </div>
+     <a href="#" class="btn">See more</a>
+    </div>
+ </div>
+
+
+
+/*------------------Projects HTML Code---------------------*/
+
+#projects {
+    padding: 50px 0;
+    background: #121212; /* Dark theme */
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.project {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: adds some shadow for better contrast */
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer {
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f); /* Fixed the issue with the rgba value */
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s; /* Corrected 'heignt' to 'height' */
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #fff; /* Ensures visibility of text */
+}
+
+.layer p {
+    font-size: 14px;
+    color: #fff; /* Ensures paragraph text is readable */
+    margin-bottom: 15px;
+}
+
+.layer a {
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.layer a:hover {
+    background-color: #ff004f;
+    color: #fff;
+}
+
+.project:hover img {
+    transform: scale(1.1);
+}
+
+.project:hover .layer {
+    height: 100%;
+}
+
+.btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background: #ff004f;
+}
+=======
+<!-- ---------------- projects HTML Code-------------- -->
+
+
+<div id="projects">
+    <div class="container">
+     <h1 class="sub-title">My Projects</h1>
+     <div class="project-list">
+         <div class="project">
+             <!-- Wrap the image with a link -->
+             <a href="https://github.com/arumullayaswanth/Smart-Robot-Car-Using-Arduion" target="_blank">
+                 <img src="images/1.jpg" alt="Arduino-Powered Intelligent Robotic Car">
+             </a>
+             <div class="layer">
+                 <h3>Arduino-Powered Intelligent Robotic Car</h3>
+                 <p>Arduino-Powered Intelligent Robotic Car – Developed a smart robotic car using Arduino, ultrasonic sensors, and 
+                     C programming, enabling obstacle detection and autonomous navigation with real-time decision-making. 🚗💡</p>
+                 <a href="https://github.com/arumullayaswanth/Smart-Robot-Car-Using-Arduion" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>    
+             </div>
+         </div>
+         <div class="project">
+             <!-- Wrap the image with a link -->
+             <a href="https://github.com/arumullayaswanth" target="_blank">
+                 <img src="images/2.png" alt="Data Pipeline Implementation">
+             </a>
+             <div class="layer">
+                 <h3>Data Pipeline Implementation</h3>
+                 <p>Data Pipeline Implementation – Designed a scalable ETL pipeline with AWS Glue, PySpark, and S3 to process, store, and catalog data, optimizing performance via CloudWatch and automating workflows, reducing manual effort by 90%. 📊🚀</p>
+                 <a href="https://github.com/arumullayaswanth" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>    
+             </div>
+         </div>
+         <div class="project">
+             <!-- Wrap the image with a link -->
+             <a href="https://github.com/arumullayaswanth" target="_blank">
+                 <img src="images/3.png" alt="Cloud-Based Web Application Deployment">
+             </a>
+             <div class="layer">
+                 <h3>Cloud-Based Web Application Deployment </h3>
+                 <p>Cloud-Based Web Application Deployment – Deployed a web app on AWS, integrating EC2, RDS MySQL, EFS, and S3 for scalability, security, and content delivery, while configuring Load Balancer, Auto Scaling, and optimizing Apache & PHP for seamless performance. ☁️💻</p>
+                 <a href="https://github.com/arumullayaswanth" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>    
+             </div>
+         </div>
+     </div>
+     <a href="#" class="btn">See more</a>
+    </div>
+ </div>
+
+
+
+/*------------------Projects HTML Code---------------------*/
+
+#projects {
+    padding: 50px 0;
+    background: #121212; /* Dark theme */
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.project {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: adds some shadow for better contrast */
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer {
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f); /* Fixed the issue with the rgba value */
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s; /* Corrected 'heignt' to 'height' */
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #fff; /* Ensures visibility of text */
+}
+
+.layer p {
+    font-size: 14px;
+    color: #fff; /* Ensures paragraph text is readable */
+    margin-bottom: 15px;
+}
+
+.layer a {
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.layer a:hover {
+    background-color: #ff004f;
+    color: #fff;
+}
+
+.project:hover img {
+    transform: scale(1.1);
+}
+
+.project:hover .layer {
+    height: 100%;
+}
+
+.btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background: #ff004f;
+}
+>>>>>>> 1ee9bed (Added changes)
+>>>>>>> 47e291e (first commit)
