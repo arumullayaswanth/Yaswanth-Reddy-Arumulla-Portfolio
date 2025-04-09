@@ -1,308 +1,324 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'poppins', sans-serif;
-    box-sizing: border-box;
+    font-family: 'poppins', sans-serif; /* Set global font and remove default margin and padding */
+    box-sizing: border-box; /* Apply box-sizing to include padding and border in element's total width/height */
 }
+
 html, body {
-    height: 100%;
-    margin: 0;
-    scroll-behavior: smooth; /* Ensure smooth scroll behavior */
+    height: 100%; /* Set height of html and body to 100% to ensure the full screen height is used */
+    margin: 0; /* Remove default margin */
+    scroll-behavior: smooth; /* Ensure smooth scrolling effect when navigating */
 }
+
 body{
-    background: #080808;
-    color: #fff;
+    background: #080808; /* Set background color to a dark shade */
+    color: #fff; /* Set text color to white for contrast against dark background */
 }
+
 #header{
-    width: 100%;
-    height: 100vh;
-    background-image: url(images/background.png);
-    background-size: cover;
-    background-position: center;
+    width: 100%; /* Ensure header spans full width */
+    height: 100vh; /* Make the header take the full viewport height */
+    background-image: url(images/background.png); /* Set the background image for the header */
+    background-size: cover; /* Ensure the background image covers the entire header area */
+    background-position: center; /* Center the background image */
 }
 
 .container{
-    padding: 10px 3%;
+    padding: 10px 3%; /* Set padding for container, 10px top-bottom, 3% left-right */
 }
 
 nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: flex; /* Use flexbox layout for navigation */
+    align-items: center; /* Align items vertically in the center */
+    justify-content: space-between; /* Space out elements between the left and right */
+    flex-wrap: wrap; /* Allow wrapping of flex items if necessary */
 }
 
 .logo{
-    width: 300px;
+    width: 300px; /* Set width of the logo */
 }
 
 nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
+    display: inline-block; /* Display list items inline */
+    list-style: none; /* Remove default list style */
+    margin: 10px 20px; /* Set margin between list items */
 }
 
 nav ul li a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    position: relative;
+    color: #fff; /* Set link color to white */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 18px; /* Set font size */
+    position: relative; /* Position anchor tag relative to its parent */
 }
 
 nav ul li a::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #ff004f;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-
+    content: ''; /* Create an empty pseudo-element */
+    width: 0; /* Initially, set width of the pseudo-element to 0 */
+    height: 3px; /* Set height of the pseudo-element */
+    background: #ff004f; /* Set color of the line (used as underline effect) */
+    position: absolute; /* Position it absolutely within the anchor */
+    left: 0; /* Align it to the left */
+    bottom: -6px; /* Place it slightly below the anchor tag */
+    transition: 0.5s; /* Animate the width change */
 }
 
 nav ul li a:hover::after{
-    width: 100%;
+    width: 100%; /* On hover, expand the pseudo-element to cover the entire width of the link */
 }
+
 .header-text {
-    margin-top: 20%; 
-    font-size: 30px; 
+    margin-top: 20%; /* Push the header text down */
+    font-size: 50px; /* Set font size */
 }
 
 .header-text h1 {
-    font-size: 60px; 
-    margin-top: 20px;
+    font-size: 60px; /* Increase font size for the main header */
+    margin-top: 20px; /* Add margin above the header */
 }
 
 .header-text h1 span {
-    color: #ff004f;
+    color: #ff004f; /* Change color of the span text inside the header */
 }
 
 /* --------------about Me css code--------------- */
 
 #about{
-    padding: 80px 0;
-    color: #ababab;
-    font-family: 'Arial', sans-serif;
+    padding: 80px 0; /* Add vertical padding for the about section */
+    color: #ffffff; /* Set text color to white */
+    font-family: 'Arial', sans-serif; /* Use Arial font for this section */
 }
+
 .row{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: flex; /* Use flexbox to arrange child elements in a row */
+    justify-content: space-between; /* Distribute the space evenly between elements */
+    flex-wrap: wrap; /* Allow wrapping of items on small screens */
 }
+
 .about-col-1{
-    flex-basis: 35%;
-    padding-right: 30px;
-    text-align: center;
+    flex-basis: 35%; /* Set 35% width for the first column */
+    padding-right: 30px; /* Add padding to the right of the first column */
+    text-align: center; /* Center text in this column */
 }
+
 .about-col-1 img{
-    width: 100%;
-    border-radius: 15px;
+    width: 100%; /* Make the image fill the full width of the column */
+    border-radius: 15px; /* Apply rounded corners to the image */
 }
+
 .about-col-2{
-    flex-basis: 60%;
+    flex-basis: 60%; /* Set 60% width for the second column */
 }
+
 .sub-title{
-    font-size: 60px;
-    font-weight: 600;
-    color: #fff;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
+    font-size: 60px; /* Set font size for subtitles */
+    font-weight: 600; /* Make the subtitle text bold */
+    color: #fff; /* Set text color to white */
+    margin-bottom: 20px; /* Add margin at the bottom */
+    letter-spacing: 1px; /* Add letter spacing for more impact */
 }
+
 .tab-titles{
-    display: flex;
-    margin: 20px 0 40px;
-    justify-content: center;
-    width: 100%;
+    display: flex; /* Use flexbox for tab titles layout */
+    margin: 20px 0 40px; /* Set margin for top and bottom of tab titles */
+    justify-content: center; /* Center align the tab titles */
+    width: 100%; /* Ensure it spans the full width */
 }
+
 .tab-links{
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
-    color: #fff;
-    transition: color 0.3s ease; /* Smooth transition for color change */
+    margin-right: 50px; /* Add margin to the right for spacing between links */
+    font-size: 18px; /* Set font size */
+    font-weight: 500; /* Set font weight */
+    cursor: pointer; /* Change cursor to pointer for interactivity */
+    position: relative; /* Position the links relative to their parent */
+    color: #fff; /* Set color to white */
+    transition: color 0.3s ease; /* Smooth color transition effect */
 }
 
 .tab-links:hover {
-    color: #ff004f; /* Pink color when hovered */
+    color: #ff004f; /* Change color to pink on hover */
 }
 
 .tab-links::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #ff004f;
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    transition: 0.5s ;
+    content: ''; /* Add an empty pseudo-element for the underline effect */
+    width: 0; /* Initially set width to 0 */
+    height: 3px; /* Set height */
+    background: #ff004f; /* Set color of the underline */
+    position: absolute; /* Position it absolutely */
+    left: 0; /* Align it to the left */
+    bottom: -8px; /* Place it slightly below the text */
+    transition: 0.5s; /* Animate width change */
 }
+
 .tab-links.active-link::after{
-    width: 50px;
+    width: 50px; /* Set width to 50px when the link is active */
 }
 
+.tab-contents ul li {
+    list-style: none; /* Remove default list style */
+    margin: 10px 0; /* Add margin between list items */
+    font-size: 18px; /* Set font size */
+    color: #ddd; /* Light grey text color */
+}
 
-.tab-contents ul li{
-    list-style: none;
-    margin: 10px 0;
+.tab-contents ul li span {
+    color: #ff004f; /* Set pink color for category name */
+    font-size: 18px; /* Slightly larger font size */
+    font-weight: bold; /* Make the category name bold */
 }
-.tab-contents ul li span{
-    color: #b54769;
-    font-size: 14px;
-}
+
 .tab-contents{
-    display: none;
+    display: none; /* Hide tab contents by default */
 }
+
 .tab-contents.active-tab{
-    display: block;
+    display: block; /* Show active tab content */
 }
 
 
 /*---------------------------Experience css code ------------------*/
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap'); /* Import Poppins font from Google Fonts */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif; /* Modern, professional font */
+    font-family: 'Poppins', sans-serif; /* Set global font to Poppins */
 }
 
 /* Experience Section */
 .experience-section {
-    padding: 80px 0;
-    /*background: #121212; /* Dark theme */
-    background: #080808;
-    color: #fff;
-    text-align: center;
+    padding: 80px 0; /* Set padding for the experience section */
+    background: #080808; /* Set dark background */
+    color: #fff; /* Set text color to white */
+    text-align: center; /* Center align text */
 }
+
 .section {
-    position: relative;
-    padding-top: 50px; /* Optional: for spacing issues */
+    position: relative; /* Position section relatively */
+    padding-top: 50px; /* Optional: padding to fix spacing issues */
 }
 
 .section-title {
-    font-size: 60px;
-    font-weight: 600;
-    margin-bottom: 30px;
-    color: #fff; /* Vibrant highlight */
+    font-size: 60px; /* Set font size for section title */
+    font-weight: 600; /* Make the section title bold */
+    margin-bottom: 30px; /* Add margin below the title */
+    color: #fff; /* Set color to white */
 }
 
 /* Experience List */
 .experience-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: flex; /* Use flexbox for the experience list */
+    justify-content: center; /* Center align the items */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
 }
 
 /* Experience Item */
 .experience-item {
-    background: rgba(40, 40, 40, 0.9);
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0px 5px 15px rgba(255, 0, 79, 0.3);
-    max-width: 600px;
-    text-align: center;
-    margin: 20px;
-    transition: 0.3s ease-in-out;
+    background: rgba(40, 40, 40, 0.9); /* Set dark background with opacity */
+    padding: 30px; /* Add padding */
+    border-radius: 12px; /* Round corners */
+    box-shadow: 0px 5px 15px rgba(255, 0, 79, 0.3); /* Add shadow effect */
+    max-width: 600px; /* Limit maximum width */
+    text-align: center; /* Center align text */
+    margin: 20px; /* Add margin around items */
+    transition: 0.3s ease-in-out; /* Smooth transition for hover effect */
 }
 
 .experience-item:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); /* Apply hover effect (slight upward movement) */
 }
 
 /* Experience Header */
 .experience-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 10px;
+    display: flex; /* Use flexbox for header */
+    align-items: center; /* Align items in the center */
+    justify-content: center; /* Center align items */
+    gap: 10px; /* Add space between items */
+    margin-bottom: 10px; /* Add margin below the header */
 }
 
 .experience-header i {
-    font-size: 28px;
-    color: #ff004f;
+    font-size: 28px; /* Set icon font size */
+    color: #ff004f; /* Set icon color to pink */
 }
 
 .experience-item h2 {
-    font-size: 24px;
-    font-weight: 600;
-    color: #ff004f;
+    font-size: 24px; /* Set font size for job titles */
+    font-weight: 600; /* Make job title bold */
+    color: #ff004f; /* Set color to pink */
 }
 
 .experience-item h3 {
-    font-size: 18px;
-    font-weight: 400;
-    color: #aaa;
-    margin-bottom: 10px;
+    font-size: 18px; /* Set font size for subheadings */
+    font-weight: 400; /* Set font weight to normal */
+    color: #aaa; /* Set text color to light grey */
+    margin-bottom: 10px; /* Add margin at the bottom */
 }
 
 /* Short Description */
 .short-description {
-    font-size: 16px;
-    color: #ddd;
-    margin-bottom: 15px;
+    font-size: 16px; /* Set font size */
+    color: #ddd; /* Set text color */
+    margin-bottom: 15px; /* Add margin at the bottom */
 }
 
 /* Hidden More Content */
 .more-content {
-    display: none;
-    margin-top: 10px;
-    background: #222;
-    padding: 15px;
-    border-radius: 8px;
-    text-align: left;
-    color: #bbb;
+    display: none; /* Hide additional content by default */
+    margin-top: 10px; /* Add margin at the top */
+    background: #222; /* Set dark background for more content */
+    padding: 15px; /* Add padding */
+    border-radius: 8px; /* Round corners */
+    text-align: left; /* Align text to the left */
+    color: #bbb; /* Set text color */
 }
 
 .more-content h4 {
-    color: #ff004f;
-    margin-top: 10px;
+    color: #ff004f; /* Set title color for additional content */
+    margin-top: 10px; /* Add margin at the top */
 }
 
 .more-content ul {
-    list-style: none;
-    padding: 0;
+    list-style: none; /* Remove list styles */
+    padding: 0; /* Remove padding */
 }
 
 .more-content ul li {
-    margin: 8px 0;
-    font-size: 16px;
-    padding-left: 20px;
-    position: relative;
+    margin: 8px 0; /* Add margin between list items */
+    font-size: 16px; /* Set font size */
+    padding-left: 20px; /* Add padding to the left */
+    position: relative; /* Position list items relatively */
 }
 
 /* Custom Bullet Points */
 .more-content ul li::before {
-    content: "•";
-    color: #ff004f;
-    font-weight: bold;
-    position: absolute;
-    left: 0;
+    content: "•"; /* Add bullet point */
+    color: #ff004f; /* Set bullet color to pink */
+    font-weight: bold; /* Make the bullet point bold */
+    position: absolute; /* Position the bullet point absolutely */
+    left: 0; /* Align to the left */
 }
 
 /* See More Button */
 .see-more-btn {
-    display: inline-block;
-    padding: 12px 25px;
-    margin-top: 15px;
-    background: #ff004f;
-    color: white;
-    text-decoration: none;
-    border: none;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s ease;
+    display: inline-block; /* Display button inline */
+    padding: 12px 25px; /* Add padding */
+    margin-top: 15px; /* Add margin on top */
+    background: #ff004f; /* Set background color to pink */
+    color: white; /* Set text color to white */
+    text-decoration: none; /* Remove underline */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Round corners */
+    font-weight: 600; /* Make text bold */
+    font-size: 16px; /* Set font size */
+    cursor: pointer; /* Change cursor to pointer for interaction */
+    transition: 0.3s ease; /* Smooth background color change on hover */
 }
 
 .see-more-btn:hover {
-    background: #d4003b;
+    background: #d4003b; /* Darker pink color on hover */
 }
 
 
@@ -310,282 +326,319 @@ nav ul li a:hover::after{
 /*------------------Projects CSS Code---------------------*/
 
 #projects {
-    padding: 50px 0;
-    /*background: #121212; /* Dark theme */
-    background: #080808;
+    padding: 50px 0; /* Set padding for the projects section */
+    background: #080808; /* Set background color */
 }
 
 .project-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
+    display: grid; /* Use grid layout for project items */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Auto-adjust columns depending on screen size */
+    grid-gap: 40px; /* Set gap between grid items */
+    margin-top: 50px; /* Add margin at the top */
 }
 
 .project {
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: adds some shadow for better contrast */
+    border-radius: 10px; /* Round corners of the project box */
+    position: relative; /* Position relative to its parent */
+    overflow: hidden; /* Hide overflow of the child elements */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow for better contrast */
 }
 
 .project img {
-    width: 100%;
-    border-radius: 10px;
-    display: block;
-    transition: transform 0.5s;
+    width: 100%; /* Set image to take full width of its parent */
+    border-radius: 10px; /* Apply rounded corners to image */
+    display: block; /* Ensure the image is block level */
+    transition: transform 0.5s; /* Add transition for image scaling */
 }
 
 .layer {
-    width: 100%;
-    height: 0%;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f); /* Fixed the issue with the rgba value */
-    border-radius: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    text-align: center;
-    font-size: 14px;
-    transition: height 0.5s; /* Corrected 'heignt' to 'height' */
+    width: 100%; /* Ensure layer takes full width */
+    height: 0%; /* Initially set height to 0% */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f); /* Add gradient background */
+    border-radius: 10px; /* Round corners */
+    position: absolute; /* Position it absolutely */
+    left: 0; /* Align it to the left */
+    bottom: 0; /* Align it to the bottom */
+    overflow: hidden; /* Hide anything outside the container */
+    display: flex; /* Use flexbox to align items in the center */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    flex-direction: column; /* Stack items vertically */
+    padding: 0 40px; /* Add horizontal padding */
+    text-align: center; /* Center align text */
+    font-size: 14px; /* Set font size */
+    transition: height 0.5s; /* Animate height change on hover */
 }
 
 .layer h3 {
-    font-weight: 500;
-    margin-bottom: 20px;
-    color: #fff; /* Ensures visibility of text */
+    font-weight: 500; /* Set font weight */
+    margin-bottom: 20px; /* Add margin */
+    color: #fff; /* Set text color */
 }
 
 .layer p {
-    font-size: 14px;
-    color: #fff; /* Ensures paragraph text is readable */
-    margin-bottom: 15px;
+    font-size: 14px; /* Set font size for project description */
+    color: #fff; /* Set text color */
+    margin-bottom: 15px; /* Add margin at the bottom */
 }
 
 .layer a {
-    margin-top: 20px;
-    color: #ff004f;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 60px;
-    background: #fff;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    text-align: center;
-    transition: background-color 0.3s, color 0.3s;
+    margin-top: 20px; /* Add margin on top */
+    color: #ff004f; /* Set color to pink */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Set font size */
+    line-height: 60px; /* Adjust line height */
+    background: #fff; /* Set background color */
+    width: 60px; /* Set width of the link */
+    height: 60px; /* Set height of the link */
+    border-radius: 50%; /* Make it circular */
+    text-align: center; /* Center the text */
+    transition: background-color 0.3s, color 0.3s; /* Animate background and text color changes */
 }
 
 .layer a:hover {
-    background-color: #ff004f;
-    color: #fff;
+    background-color: #ff004f; /* Change background on hover */
+    color: #fff; /* Change text color on hover */
 }
 
 .project:hover img {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Scale the image on hover */
 }
 
 .project:hover .layer {
-    height: 100%;
+    height: 100%; /* Expand the layer to full height on hover */
 }
 
 .btn {
-    display: block;
-    margin: 50px auto;
-    width: fit-content;
-    border: 1px solid #ff004f;
-    padding: 14px 50px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: #fff;
-    transition: background 0.5s;
+    display: block; /* Display button as block */
+    margin: 50px auto; /* Center the button horizontally with margin */
+    width: fit-content; /* Let the button width adjust to content */
+    border: 1px solid #ff004f; /* Add border with pink color */
+    padding: 14px 50px; /* Add padding */
+    border-radius: 6px; /* Round the corners */
+    text-decoration: none; /* Remove underline from button */
+    color: #fff; /* Set text color to white */
+    transition: background 0.5s; /* Smooth background transition */
 }
 
 .btn:hover {
-    background: #ff004f;
+    background: #ff004f; /* Change background to pink on hover */
 }
 
 
 /*------------------Contact CSS Code---------------------*/
+
 .contact-left{
-    flex-basis: 35%;
+    flex-basis: 35%; /* Set 35% width for the left column */
 }
+
 .contact-right{
-    flex-basis: 60%;
+    flex-basis: 60%; /* Set 60% width for the right column */
 }
+
 .contact-left p{
-    margin-top: 30px;
+    margin-top: 30px; /* Add margin to the top of paragraph */
 }
+
 .contact-left p i{
-    color: #ff004f;
-    margin-right: 15px;
-    font-size: 25px;
+    color: #ff004f; /* Set color of icons to pink */
+    margin-right: 15px; /* Add margin to the right of icon */
+    font-size: 25px; /* Set icon font size */
 }
+
 .social-icons{
-    margin-top: 30px;
+    margin-top: 30px; /* Add margin to the top of social icons */
 }
+
 .social-icons a{
-    text-decoration: none;
-    font-size: 30px;
-    margin-right: 15px;
-    color: #ababab;
-    display: inline-block;
-    transition: transform 0.5s;
+    text-decoration: none; /* Remove underline from social links */
+    font-size: 30px; /* Set font size for social icons */
+    margin-right: 15px; /* Add margin to the right of each icon */
+    color: #ababab; /* Set color to grey */
+    display: inline-block; /* Display icons inline */
+    transition: transform 0.5s; /* Animate transformation on hover */
 }
+
 .social-icons a:hover{
-    color: #ff004f;
-    transform: translateY(-5px);
+    color: #ff004f; /* Change icon color on hover */
+    transform: translateY(-5px); /* Slight upward movement on hover */
 }
+
 .btn.btn2{
-    display: inline-block;
-    background: #ff004f;
+    display: inline-block; /* Display as inline block */
+    background: #ff004f; /* Set background color to pink */
 }
+
 .contact-right form{
-    width: 100%;
-}
-form input, form textarea{
-    width: 100%;
-    border: 0;
-    outline: none;
-    background: #262626;
-    padding: 15px;
-    margin: 15px 0;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 6px;
-}
-form .btn2{
-    padding: 14px 60px;
-    font-size: 18px;
-    margin-top: 20px;
-    cursor:pointer;
-}
-.copyright{
-    width: 100%;
-    text-align: center;
-    padding: 25px 0;
-    background-color: #262626;
-    font-weight: 300;
-    margin-top: 20px;
-}
-.copyright i{
-    color: #ff004f;
+    width: 100%; /* Set form to take full width */
 }
 
+form input, form textarea {
+    width: 100%; /* Ensure form inputs and textareas take up the full width of their container */
+    border: 0; /* Remove the border around the form inputs and textareas */
+    outline: none; /* Remove the outline that appears when inputs are focused */
+    background: #262626; /* Set the background color to a dark gray */
+    padding: 15px; /* Add padding inside the form inputs for spacing */
+    margin: 15px 0; /* Add vertical margin between the inputs */
+    color: #fff; /* Set text color to white */
+    font-size: 18px; /* Set font size for text inside the form inputs */
+    border-radius: 6px; /* Round the corners of the inputs */
+}
 
-/*---------------------css for small screens------------*/
-/*--------------menu---------------*/
-/*---------------------css for small screens------------*/
-/*--------------menu---------------*/
+form .btn2 {
+    padding: 14px 60px; /* Add padding inside the button to make it bigger */
+    font-size: 18px; /* Set font size of the button text */
+    margin-top: 20px; /* Add top margin for spacing */
+    cursor: pointer; /* Change the cursor to a pointer on hover to indicate interactivity */
+}
+
+.copyright {
+    width: 100%; /* Make the copyright section take up the full width */
+    text-align: center; /* Center the text */
+    padding: 25px 0; /* Add vertical padding for spacing */
+    background-color: #262626; /* Set background color to dark gray */
+    font-weight: 300; /* Set font weight to light */
+    margin-top: 20px; /* Add top margin for spacing */
+}
+
+.copyright i {
+    color: #ff004f; /* Set color of the icon to pink */
+}
+
+/*--------------------- CSS for small screens -------------------*/
+/*--------------------- Menu for small screens -----------------*/
+/* Hide the sharp font icon */
 nav .fa-sharp {
-    display: none;
-}
-nav .fa-solid {
-    display: none;
+    display: none; /* Hide the sharp icon */
 }
 
+/* Hide the solid font icon by default */
+nav .fa-solid {
+    display: none; /* Hide the solid icon */
+}
+
+/* Media query for screens with a maximum width of 600px */
 @media only screen and (max-width: 600px) {
+
     #header {
         background-image: url(images/phone-background.png); /* Change background image for smaller screens */
     }
 
     .header-text {
-        margin-top: 450px; /* Adjust margin-top for better positioning */
+        margin-top: 450px; /* Adjust the margin-top for better positioning on small screens */
     }
 
     .header-text h1 {
-        font-size: 36px; /* Adjust font size for smaller screens */
+        font-size: 36px; /* Reduce font size of the main header */
     }
 
     nav ul li a {
-        font-size: 16px; /* Make menu font size smaller for small screens */
+        font-size: 16px; /* Reduce font size for menu items */
     }
 
     .logo {
-        width: 200px; /* Adjust logo size for smaller screens */
+        width: 200px; /* Reduce the width of the logo */
     }
 
     nav ul li {
-        margin: 10px 20px; /* Reduce margin for menu items */
+        margin: 10px 20px; /* Reduce the margin between navigation items */
     }
 
     /* Navigation menu for small screens */
     nav ul {
-        background: #ff004f;
-        position: fixed;
-        top: 0;
-        right: -200px; 
-        width: 200px;
-        height: 100vh;
-        padding-top: 50px;
-        z-index: 2;
-        transition: right 0.5s ease; 
+        background: #ff004f; /* Set background color for the mobile menu */
+        position: fixed; /* Make the menu fixed to the top of the screen */
+        top: 0; /* Align the menu to the top */
+        right: -200px; /* Initially hide the menu by positioning it off-screen */
+        width: 200px; /* Set the width of the menu */
+        height: 100vh; /* Set the height to fill the entire viewport height */
+        padding-top: 50px; /* Add top padding inside the menu */
+        z-index: 2; /* Set z-index to ensure it overlays other content */
+        transition: right 0.5s ease; /* Smooth transition for the menu sliding in/out */
     }
 
     nav ul li {
-        display: block;
-        margin: 25px;
+        display: block; /* Stack the list items vertically */
+        margin: 25px; /* Add margin between items */
     }
 
+    /* Show hamburger icon for small screens */
     nav .fa-solid {
-        display: block; /* Show hamburger icon */
-        cursor: pointer;
-        font-size: 30px;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        color: white;
+        display: block; /* Show the solid icon (hamburger menu) */
+        cursor: pointer; /* Change the cursor to pointer for interactivity */
+        font-size: 30px; /* Set font size of the icon */
+        position: absolute; /* Position the icon absolutely */
+        top: 20px; /* Align it to the top */
+        right: 20px; /* Align it to the right */
+        color: white; /* Set the icon color to white */
     }
 
+    /* Show close icon when the menu is open */
     nav ul .fa-sharp {
-        display: block; /* Show close icon */
-        cursor: pointer;
-        font-size: 30px;
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        color: white;
+        display: block; /* Display the close icon */
+        cursor: pointer; /* Change the cursor to pointer */
+        font-size: 30px; /* Set the icon font size */
+        position: absolute; /* Position the icon absolutely */
+        top: 20px; /* Align it to the top */
+        left: 20px; /* Align it to the left */
+        color: white; /* Set the icon color to white */
     }
 
-    .sub-title{
-        font-size: 40px;
+    .sub-title {
+        font-size: 40px; /* Adjust font size of subtitles for small screens */
     }
 
-    .about-col-1, .about-col-2{
-        flex-basis: 100%;
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%; /* Make both columns take full width */
     }
 
-    .about-col-1{
-        margin-bottom: 30px;   
+    .about-col-1 {
+        margin-bottom: 30px; /* Add margin to the bottom of the first column */
     }
 
-    .about-col-2{
-        font-size: 14px;
+    .about-col-2 {
+        font-size: 14px; /* Reduce font size of the second column text */
     }
 
-    .tab-links{
-        font-size: 16px;
-        margin-right: 20px;
+    .tab-links {
+        font-size: 16px; /* Reduce font size of tab links */
+        margin-right: 20px; /* Reduce the margin between tab links */
     }
 
-    .contact-left, .contact-right{
-        flex-basis: 100%;
+    .contact-left, .contact-right {
+        flex-basis: 100%; /* Make both contact columns take full width */
     }
 
-    .copyright{
-        font-size: 15px;
+    .copyright {
+        font-size: 15px; /* Reduce font size of the copyright text */
     }
 
-    /* Adjust message display */
+    /* Adjust the display of success message */
     #msg {
-        color: #61b752;
-        margin-top: 20px; /* Adjust margin to avoid overlap */
-        display: block;
+        color: #61b752; /* Set success message text color */
+        margin-top: 20px; /* Add margin to avoid overlap with other elements */
+        display: block; /* Ensure the message is visible */
+    }
+
+    /* Adjust padding and font size for the About section */
+    #about {
+        padding: 80px 0; /* Set vertical padding */
+        color: #ffffff; /* Set text color to white */
+        font-family: 'Arial', sans-serif; /* Use Arial font for the About section */
+    }
+
+    /* Adjust list style for tab contents */
+    .tab-contents ul li {
+        list-style: none; /* Remove default list style */
+        margin: 10px 0; /* Add vertical margin between list items */
+        font-size: 14px; /* Adjust font size */
+        color: #ddd; /* Set text color to light grey */
+    }
+
+    /* Set category name color and size in the tab contents */
+    .tab-contents ul li span {
+        color: #ff004f; /* Set category color to pink */
+        font-size: 14px; /* Set font size */
+        font-weight: bold; /* Make category name bold */
     }
 }
-
