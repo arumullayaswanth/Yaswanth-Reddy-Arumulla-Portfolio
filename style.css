@@ -324,7 +324,6 @@ nav ul li a:hover::after{
 
 
 /*------------------Projects CSS Code---------------------*/
-
 #projects {
     padding: 50px 0; /* Set padding for the projects section */
     background: #080808; /* Set background color */
@@ -338,10 +337,15 @@ nav ul li a:hover::after{
 }
 
 .project {
-    border-radius: 10px; /* Round corners of the project box */
-    position: relative; /* Position relative to its parent */
-    overflow: hidden; /* Hide overflow of the child elements */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow for better contrast */
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Ensure all items are of the same size */
+    flex-direction: column;
+    height: 380px; /* Ensure uniform height */
+    width: 100%; /* Make sure they occupy the full width within the grid */
+    background: #fff; /* Background for project */
 }
 
 .project img {
@@ -369,6 +373,7 @@ nav ul li a:hover::after{
     font-size: 14px; /* Set font size */
     transition: height 0.5s; /* Animate height change on hover */
 }
+
 
 .layer h3 {
     font-weight: 500; /* Set font weight */
@@ -422,7 +427,7 @@ nav ul li a:hover::after{
 }
 
 .btn:hover {
-    background: #ff004f; /* Change background to pink on hover */
+    background: #ff004f;
 }
 
 
