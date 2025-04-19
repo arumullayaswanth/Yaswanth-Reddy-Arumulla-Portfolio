@@ -56,7 +56,7 @@
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li>🛠️ <span>Version Control:</span> Git, GitHub</li>
-                            <li>🔄 <span>Continuous Integration:</span> Jenkins</li>
+                            <li>🔄 <span>Continuous Integration:</span> Jenkins, GitHub</li>
                             <li>📦 <span>Build Tool:</span> Maven</li>
                             <li>🛡️ <span>Code Quality & Security:</span> SonarQube</li>
                             <li>⚙️ <span>Configuration Management:</span> Ansible</li>
@@ -68,7 +68,7 @@
                             <li>☁️ <span>Cloud Platforms:</span> AWS</li>
                             <li>🗄️ <span>Databases:</span> MySQL, MongoDB</li>
                             <li>🖥️ <span>Programming:</span> Python, C</li>
-                            <li>📊 <span>Logging & Monitoring:</span> Prometheus, Grafana</li>
+                            <li>📊 <span>Logging & Monitoring:</span> Splunk, Prometheus, Grafana</li>
                         </ul>
                     </div>
                     
@@ -163,64 +163,80 @@
 </div>
 
 <!-- ---------------- projects HTML Code-------------- -->
-
-
 <div id="projects">
     <div class="container">
-     <h1 class="sub-title">My Projects</h1>
-     <div class="project-list">
-        <div class="project">
-            <!-- Wrap the image with a link -->
-            <a href="https://github.com/arumullayaswanth/jenkins-tomcat-deployment-project.git" target="_blank">
-                <img src="images/4.png" alt="Data Pipeline Implementation">
-            </a>
-            <div class="layer">
-                <h3>End-to-End CI/CD Deployment on AWS with Jenkins & Terraform </h3>
-                <p>Description:
-                    Designed and implemented a fully automated CI/CD pipeline to deploy a Java-based web application on an Apache Tomcat server using Jenkins, Terraform, and AWS cloud services. This project focused on infrastructure automation, continuous integration, and continuous deployment to deliver applications more efficiently and reliably.</p>
-                <a href="https://github.com/arumullayaswanth/jenkins-tomcat-deployment-project.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>    
+        <h1 class="sub-title">My Projects</h1>
+        <div class="project-list">
+            <!-- Project 1 -->
+            <div class="project" id="project-1">
+                <a href="https://github.com/arumullayaswanth/jenkins-tomcat-deployment-project.git" target="_blank">
+                    <img src="images/4.png" alt="Data Pipeline Implementation">
+                </a>
+                <div class="layer">
+                    <h3>End-to-End CI/CD Deployment on AWS with Jenkins & Terraform </h3>
+                    <p>Description:
+                        Designed and implemented a fully automated CI/CD pipeline to deploy a Java-based web application on an Apache Tomcat server using Jenkins, Terraform, and AWS cloud services. This project focused on infrastructure automation, continuous integration, and continuous deployment to deliver applications more efficiently and reliably.</p>
+                    <a href="https://github.com/arumullayaswanth/jenkins-tomcat-deployment-project.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>    
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="project" id="project-2">
+                    <!-- Wrap the image with a link -->
+                <a href="https://github.com/arumullayaswanth" target="_blank">
+                    <img src="images/2.png" alt="Data Pipeline Implementation">
+                </a>
+                <div class="layer">
+                    <h3>Data Pipeline Implementation</h3>
+                    <p>Data Pipeline Implementation – Designed a scalable ETL pipeline with AWS Glue, PySpark, and S3 to process, store, and catalog data, optimizing performance via CloudWatch and automating workflows, reducing manual effort by 90%. 📊🚀</p>
+                    <a href="https://github.com/arumullayaswanth" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>    
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project" id="project-3">
+                <a href="https://github.com/arumullayaswanth/Three-Tier-AWS-Architecture-project.git" target="_blank">
+                    <img src="images/3.png" alt="Cloud-Based Web Application Deployment">
+                </a>
+                <div class="layer">
+                    <h3>Three-Tier Web Application Deployment on AWS with Load Balancing and Aurora Database</h3>
+                    <p> ✅ Designed and deployed a secure, scalable three-tier web application architecture on AWS using EC2, ALB, ASG, Route 53, ACM, and Aurora MySQL, 
+                        ensuring high availability, fault tolerance, and optimized performance across multiple availability zones.☁️💻</p>
+                    <a href="https://github.com/arumullayaswanth/Three-Tier-AWS-Architecture-project.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>    
+                </div>
+            </div>
+            <!-- Project 4 -->
+            <div class="project" id="project-4">
+                <a href="https://github.com/arumullayaswanth/ec2-to-rds-migrate.git" target="_blank">
+                    <img src="images/5.png" alt="EC2 to RDS Migration">
+                </a>
+                <div class="layer">
+                    <h3>EC2 to RDS Migration Using AWS DMS with Infrastructure as Code (Terraform)                    </h3>
+                    <p>✅ Automated MySQL database migration from EC2 to Amazon RDS using Terraform and AWS DMS, reducing manual effort and ensuring minimal downtime.</P>
+                    <P>✅ Provisioned and managed cloud infrastructure using Infrastructure as Code (IaC) with Terraform to deploy EC2, RDS, and DMS resources consistently and efficiently.</P>
+                    </p>
+                    <a href="https://github.com/arumullayaswanth/ec2-to-rds-migrate.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <!-- Project 4 (Initially Hidden) -->
+            <!-- Project 5 (Initially Hidden) -->
+            <div class="project" id="project-5" style="display: none;">
+                <a href="https://github.com/arumullayaswanth/Smart-Robot-Car-Using-Arduion" target="_blank">
+                    <img src="images/1.png" alt="Smart Robot Car Using Arduino">
+                </a>
+                <div class="layer">
+                    <h3>Arduino-Powered Intelligent Robotic Car</h3>
+                    <p>Developed a smart robotic car using Arduino...</p>
+                    <a href="https://github.com/arumullayaswanth/Smart-Robot-Car-Using-Arduion" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
             </div>
         </div>
 
-
-         <div class="project">
-             <!-- Wrap the image with a link -->
-             <a href="https://github.com/arumullayaswanth" target="_blank">
-                 <img src="images/2.png" alt="Data Pipeline Implementation">
-             </a>
-             <div class="layer">
-                 <h3>Data Pipeline Implementation</h3>
-                 <p>Data Pipeline Implementation – Designed a scalable ETL pipeline with AWS Glue, PySpark, and S3 to process, store, and catalog data, optimizing performance via CloudWatch and automating workflows, reducing manual effort by 90%. 📊🚀</p>
-                 <a href="https://github.com/arumullayaswanth" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>    
-             </div>
-         </div>
-         <div class="project">
-             <!-- Wrap the image with a link -->
-             <a href="https://github.com/arumullayaswanth" target="_blank">
-                 <img src="images/3.png" alt="Cloud-Based Web Application Deployment">
-             </a>
-             <div class="layer">
-                 <h3>Cloud-Based Web Application Deployment </h3>
-                 <p>Cloud-Based Web Application Deployment – Deployed a web app on AWS, integrating EC2, RDS MySQL, EFS, and S3 for scalability, security, and content delivery, while configuring Load Balancer, Auto Scaling, and optimizing Apache & PHP for seamless performance. ☁️💻</p>
-                 <a href="https://github.com/arumullayaswanth" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>    
-             </div>
-         </div>
-         <div class="project">
-            <!-- Wrap the image with a link -->
-            <a href="https://github.com/arumullayaswanth/Smart-Robot-Car-Using-Arduion" target="_blank">
-                <img src="images/1.png" alt="Arduino-Powered Intelligent Robotic Car">
-            </a>
-            <div class="layer">
-                <h3>Arduino-Powered Intelligent Robotic Car</h3>
-                <p>Arduino-Powered Intelligent Robotic Car – Developed a smart robotic car using Arduino, ultrasonic sensors, and 
-                    C programming, enabling obstacle detection and autonomous navigation with real-time decision-making. 🚗💡</p>
-                <a href="https://github.com/arumullayaswanth/Smart-Robot-Car-Using-Arduion" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>    
-            </div>
-        </div>
-     </div>
-     <a href="#" class="btn">See more</a>
+        <!-- Button to reveal more projects -->
+        <a href="javascript:void(0)" class="btn" id="see-more" onclick="showMoreProjects()">See more</a>
     </div>
- </div>
+</div>
+
 
 
 <!-- ---------------- Contact HTML Code-------------- -->
@@ -296,10 +312,25 @@
 
 
 /*------------------Projects javascript Code---------------------*/
+
+
+    // Function to display more projects when "See more" is clicked
+  function showMoreProjects() {
+    // Show the remaining projects
+    document.getElementById("project-5").style.display = "block";
+   // document.getElementById("project-6").style.display = "block";
+    
+    // Hide the "See more" button
+    document.getElementById("see-more").style.display = "none";
+}
+
+
+  
+
 /*------------------Contact javascript Code---------------------*/
-
-
 </script>
+
+
 
 <!---------------------javascript for small screens------------>
 <script>
