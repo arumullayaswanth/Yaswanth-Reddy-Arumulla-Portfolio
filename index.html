@@ -56,7 +56,7 @@
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li>🛠️ <span>Version Control:</span> Git, GitHub</li>
-                            <li>🔄 <span>Continuous Integration:</span> Jenkins, GitHub</li>
+                            <li>🔄 <span>Continuous Integration:</span> Jenkins, GitLab</li>
                             <li>📦 <span>Build Tool:</span> Maven</li>
                             <li>🛡️ <span>Code Quality & Security:</span> SonarQube</li>
                             <li>⚙️ <span>Configuration Management:</span> Ansible</li>
@@ -170,7 +170,7 @@
             <!-- Project 1 -->
             <div class="project" id="project-1">
                 <a href="https://github.com/arumullayaswanth/jenkins-tomcat-deployment-project.git" target="_blank">
-                    <img src="images/4.png" alt="Data Pipeline Implementation">
+                    <img src="images/4.png" alt="End-to-End CI/CD Deployment on AWS with Jenkins & Terraform ">
                 </a>
                 <div class="layer">
                     <h3>End-to-End CI/CD Deployment on AWS with Jenkins & Terraform </h3>
@@ -182,13 +182,16 @@
             <!-- Project 2 -->
             <div class="project" id="project-2">
                     <!-- Wrap the image with a link -->
-                <a href="https://github.com/arumullayaswanth" target="_blank">
-                    <img src="images/2.png" alt="Data Pipeline Implementation">
+                <a href="https://github.com/arumullayaswanth/Fullstack-nodejs-ecs-fargate-deployment.git" target="_blank">
+                    <img src="images/6.png" alt="Fullstack Node.js Application Deployment on AWS ECS Fargate using Terraform">
                 </a>
                 <div class="layer">
-                    <h3>Data Pipeline Implementation</h3>
-                    <p>Data Pipeline Implementation – Designed a scalable ETL pipeline with AWS Glue, PySpark, and S3 to process, store, and catalog data, optimizing performance via CloudWatch and automating workflows, reducing manual effort by 90%. 📊🚀</p>
-                    <a href="https://github.com/arumullayaswanth" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>    
+                    <h3>Fullstack Node.js Application Deployment on AWS ECS Fargate using Terraform</h3>
+                    <p>🚀 Containerized and deployed a fullstack Node.js application on AWS ECS Fargate using Docker, creating a fully serverless, auto-scalable, and highly available cloud-native architecture.</p>
+                    <p>🔄 Implemented CI/CD pipelines for automated Docker image builds and Amazon ECR integration, enabling seamless deployment across frontend, backend, and database services.</p>
+                    <p>🔧 Provisioned cloud infrastructure with Terraform, including ECS services, ECR repositories, IAM roles, VPC networking, and ALBs, following Infrastructure as Code (IaC) best practices.</p>
+                    <p>🌐 Configured DNS routing via Route 53, ensuring reliable communication between services and secure access to Amazon RDS with support for zero-downtime deployments.</p>
+                    <a href="https://github.com/arumullayaswanth/Fullstack-nodejs-ecs-fargate-deployment.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>    
                 </div>
             </div>
 
@@ -218,9 +221,34 @@
                 </div>
             </div>
 
-            <!-- Project 4 (Initially Hidden) -->
             <!-- Project 5 (Initially Hidden) -->
             <div class="project" id="project-5" style="display: none;">
+                <a href="https://github.com/arumullayaswanth/aws-s3-cloudfront-lambda-automation.git" target="_blank">
+                    <img src="images/7.png" alt=" AWS Cloud Project – Static Website Hosting with Automation">
+                </a>
+                <div class="layer">
+                    <h3> AWS Cloud Project – Static Website Hosting with Automation</h3>
+                    <p>✅ Designed and deployed a static website using Amazon S3 with public access configuration and versioning for reliable content management.</p>
+                    <p>🚀 Integrated AWS CloudFront as a CDN to improve global content delivery performance, configuring custom cache policies for optimized TTL settings.</p>
+                    <p>🔁 Automated CloudFront cache invalidation using AWS Lambda and IAM roles to ensure real-time content updates upon every code deployment to S3.</p>
+                    <a href="https://github.com/arumullayaswanth/aws-s3-cloudfront-lambda-automation.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>    
+                </div>
+            </div>
+
+
+            <!-- Project 6 (Initially Hidden) -->
+            <div class="project" id="project-6" style="display: none;">
+                <a href="https://github.com/arumullayaswanth" target="_blank">
+                    <img src="images/2.png" alt="Data Pipeline Implementation">
+                </a>
+                <div class="layer">
+                    <h3>Data Pipeline Implementation</h3>
+                    <p>Data Pipeline Implementation – Designed a scalable ETL pipeline with AWS Glue, PySpark, and S3 to process, store, and catalog data, optimizing performance via CloudWatch and automating workflows, reducing manual effort by 90%. 📊🚀</p>
+                    <a href="https://github.com/arumullayaswanth" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>    
+                </div>
+            </div>
+
+            <div class="project" id="project-7" style="display: none;">
                 <a href="https://github.com/arumullayaswanth/Smart-Robot-Car-Using-Arduion" target="_blank">
                     <img src="images/1.png" alt="Smart Robot Car Using Arduino">
                 </a>
@@ -318,7 +346,8 @@
   function showMoreProjects() {
     // Show the remaining projects
     document.getElementById("project-5").style.display = "block";
-   // document.getElementById("project-6").style.display = "block";
+    document.getElementById("project-6").style.display = "block";
+    document.getElementById("project-7").style.display = "block";
     
     // Hide the "See more" button
     document.getElementById("see-more").style.display = "none";
