@@ -3,399 +3,720 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
+    <title>Yaswanth Reddy Arumulla - DevOps Engineer</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/3b6a964363.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<div id="header">
-    <div class="container">
-        <nav>
-            <img src="images/logo1.png" class="logo">
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience-section">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader">
+            <div class="loader-inner">
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+            </div>
+        </div>
+        <p>Loading Portfolio...</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="images/logo.png" alt="Y Logo">
+                    <div class="logo-circuit"></div>
+                </div>
+                <span class="logo-text">Yaswanth Reddy Arumulla</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-            <p>DevOps Engineer</p>
-            <h1>Hi, I'm <span>Yaswanth Reddy Arumulla</span><br>From India</h1>
-        </div>        
-    </div>
-</div> 
-<!-- ---------abount--------- --> 
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="images/user.png">
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                    <p>I am a <strong>DevOps Engineer</strong> with a strong passion for automation, cloud computing, and optimizing software development processes. 
-                        My expertise lies in <strong>CI/CD pipelines, cloud infrastructure, and containerization</strong> using tools like <strong>Jenkins, Docker, and Kubernetes.</strong>
-                        I love working with <strong>Terraform and Ansible </strong> to manage infrastructure efficiently and securely.
-                    </p><br>
-                    <p>My experience extends to <strong>AWS</strong>, where I design, deploy, and maintain scalable cloud solutions. 
-                        I have hands-on experience with <strong>EC2, S3, IAM, RDS, ELB, and VPC,</strong> ensuring high availability and security in cloud environments.
-                    </p><br>
-                    <p>I am always looking for new technologies and better ways to improve workflows. Whether it’s <strong>automation, cloud migration, 
-                        or security best practices,</strong> I am driven by the challenge of solving problems and making things more efficient.
-                    </p>
-                    <div class="tab-titles">
-                       <p class="tab-links active-link" onclick="opentab('skills')"> Technical skills </p> 
-                       <p class="tab-links" onclick="opentab('aws-services')"> AWS Services </p> 
-                       <p class="tab-links" onclick="opentab('certification')"> Certification </p> 
-                       <p class="tab-links" onclick="opentab('education')"> Education </p> 
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="hero-particles"></div>
+            <div class="hero-gradient"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Available for opportunities
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">Hi, I'm</span>
+                    <span class="title-name">Yaswanth Reddy Arumulla</span>
+                    <span class="title-role">DevOps Engineer</span>
+                </h1>
+                <p class="hero-description">
+                    Passionate about automating workflows, optimizing cloud infrastructure, 
+                    and bridging the gap between development and operations with cutting-edge technologies.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">1.5+</span>
+                        <span class="stat-label">Years Experience</span>
                     </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li>🛠️ <span>Version Control:</span> Git, GitHub</li>
-                            <li>🔄 <span>Continuous Integration:</span> Jenkins, GitLab</li>
-                            <li>📦 <span>Build Tool:</span> Maven</li>
-                            <li>🛡️ <span>Code Quality & Security:</span> SonarQube</li>
-                            <li>⚙️ <span>Configuration Management:</span> Ansible</li>
-                            <li>🐳 <span>Containerization:</span> Docker</li>
-                            <li>🚢 <span>Container Orchestration:</span> Kubernetes (Basic Knowledge)</li>
-                            <li>🏗️ <span>Infrastructure as Code (IaC):</span> Terraform</li>
-                            <li>💻 <span>Operating Systems:</span> Linux, Windows</li>
-                            <li>🌐 <span>Web Application Server:</span> Apache Tomcat</li>
-                            <li>☁️ <span>Cloud Platforms:</span> AWS</li>
-                            <li>🗄️ <span>Databases:</span> MySQL, MongoDB</li>
-                            <li>🖥️ <span>Programming:</span> Python, C</li>
-                            <li>📊 <span>Logging & Monitoring:</span> Splunk, Prometheus, Grafana</li>
-                        </ul>
+                    <div class="stat">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">AWS</span>
+                        <span class="stat-label">Certified</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Get In Touch</span>
+                        <div class="btn-arrow">→</div>
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">
+                        <span>View Projects</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="profile-container">
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <div class="profile-avatar">
+                                <img src="images/user.png" alt="Profile" />
+                            </div>
+                            <div class="profile-ring"></div>
+                            <div class="profile-dots">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h3>DevOps Engineer</h3>
+                            <p>Cloud & Automation Expert</p>
+                            <div class="profile-status">
+                                <div class="status-dot"></div>
+                                <span>Available</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="floating-cards">
+                        <div class="float-card card-1">
+                            <div class="card-icon">☁️</div>
+                            <span>AWS</span>
+                        </div>
+                        <div class="float-card card-2">
+                            <div class="card-icon">🐳</div>
+                            <span>Docker</span>
+                        </div>
+                        <div class="float-card card-3">
+                            <div class="card-icon">⚙️</div>
+                            <span>Jenkins</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get to know me</span>
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Passionate DevOps engineer with expertise in cloud computing and automation</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="text-block">
+                        <h3>My Journey</h3>
+                        <p>
+                            I am a DevOps Engineer with a strong passion for automation, cloud computing, and optimizing 
+                            software development processes. My expertise lies in bridging the gap between development and 
+                            operations teams using modern tools and practices.
+                        </p>
                     </div>
                     
-                    <div class="tab-contents" id="aws-services">
-                        <h2><span>AWS Services</span></h2>
-                        <ul>
-                            <li>🖥️ <strong>Elastic Compute Cloud (EC2)</strong></li>
-                            <li>📦 <strong>Simple Storage Service (S3)</strong></li>
-                            <li>🔐 <strong>Identity and Access Management (IAM)</strong></li>
-                            <li>💻 <strong>AWS Command Line Interface (CLI)</strong></li>
-                            <li>🗄️ <strong>Relational Database Service (RDS)</strong></li>
-                            <li>🌍 <strong>Cross-Region Replication</strong></li>
-                            <li>⚖️ <strong>Elastic Load Balancer (ELB)</strong></li>
-                            <li>💾 <strong>Elastic Block Storage (EBS)</strong></li>
-                            <li>🌐 <strong>Virtual Private Cloud (VPC)</strong></li>
-                            <li>📊 <strong>Amazon CloudWatch</strong></li>
-                            <li>🔄 <strong>AWS Lambda</strong></li>
-                            <li>🚀 <strong>Amazon API Gateway</strong></li>
-                        </ul>
-                    </div>
-    
-                    <div class="tab-contents" id="certification">
-                        <h2><span>Certifications & Specializations</span></h2>
-                        <ul>
-                            <li>
-                                <span>📜</span> <strong>Python for AI & Data Science</strong>  
-                                <br> <em>Issued by Coursera (VIT-AP), 2024</em>
-                            </li>
-                            <li>
-                                <span>☁️</span> <strong>AWS Solutions Architect Associate</strong>  
-                                <br> <em>Certified by AWS, 2024</em>
-                            </li>
-                            <li>
-                                <span>🔧</span> <strong>Embedded Systems & IoT</strong>  
-                                <br> <em>Focused on Microcontrollers & Real-time Systems</em>
-                            </li>
-                        </ul>
+                    <div class="text-block">
+                        <h3>Technical Expertise</h3>
+                        <p>
+                            My technical proficiency spans across AWS cloud services, where I design, deploy, and maintain 
+                            scalable solutions. I have hands-on experience with containerization, CI/CD pipelines, and 
+                            Infrastructure as Code using Terraform.
+                        </p>
                     </div>
                     
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span><i class="fa-solid fa-graduation-cap"></i> Vellore Institute of Technology (VIT), Amaravati / August 2020 – July 2024 </span><br>Bachelor of Technology in Electronics and Communication Engineering (Embedded Systems) (GPA: 8.23 / 10.0) </li>
-                            <li><span><i class="fa-solid fa-school"></i> Sri Saraswathi Junior College, Ongole / April 2018 – February 2020  </span><br>Intermediate (Mathematics, Physics, and Chemistry) (GPA: 8.0 / 10.0) </li>
-                            <li><span><i class="fa-solid fa-school"></i> Sri Surya Vaidyanathan, Ongole / April 2017 – February 2018 </span><br> Secondary School Certificate (SSC) (GPA: 8.8 / 10.0) </li>
-                        </ul>
+                    <div class="text-block">
+                        <h3>Philosophy</h3>
+                        <p>
+                            I believe in continuous learning and improvement. Whether it's automation, cloud migration, 
+                            or security implementation, I thrive on solving complex problems and bringing efficiency to workflows.
+                        </p>
                     </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<!-- ---------------- Experience HTML Code-------------- -->
-<div id="experience-section">
-    <div class="container">
-        <h1 class="section-title">My Experience</h1>
-        <div class="experience-list">
-            <div class="experience-item">
-                <div class="experience-header">
-                    <i class="fa-solid fa-microchip"></i>
-                    <h2>Skyline Software Solutions</h2>
                 </div>
-                <h3>Software Engineer Intern <span>(June 2021 – August 2021, Ongole, India)</span></h3>
-                <p class="short-description">Developed an AI-powered OCR system for medical transcripts, achieving faster and more accurate conversions.</p>
-
-                <!-- Hidden More Content -->
-                <div class="more-content">
-                    <h4>Project Overview:</h4>
-                    <p>Developed an AI-based Optical Character Recognition (OCR) tool for automating the conversion of medical transcripts into digital soft copies.</p>
+                
+                <div class="skills-section">
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4>🛠️ DevOps Tools</h4>
+                            <div class="skill-list">
+                                <span class="skill-item">Git, GitHub, GitLab</span>
+                                <span class="skill-item">Jenkins</span>
+                                <span class="skill-item">Maven</span>
+                                <span class="skill-item">SonarQube</span>
+                                <span class="skill-item">Ansible</span>
+                                <span class="skill-item">Docker</span>
+                                <span class="skill-item">Kubernetes</span>
+                                <span class="skill-item">Linux, Windows</span>
+                                <span class="skill-item">Apache Tomcat</span>
+                                <span class="skill-item">Argo CD</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4>☁️ Cloud Platforms</h4>
+                            <div class="skill-list">
+                                <span class="skill-item aws">Elastic Compute Cloud (EC2)</span>
+                                <span class="skill-item aws">Simple Storage Service (S3)</span>
+                                <span class="skill-item aws">Virtual Private Cloud (VPC)</span>
+                                <span class="skill-item aws">Relational Database Service (RDS)</span>
+                                <span class="skill-item aws">Identity and Access Management (IAM)</span>
+                                <span class="skill-item aws">AWS Command Line Interface (CLI) </span>
+                                <span class="skill-item aws">Apache Kafka (Amazon MSK) </span>
+                                <span class="skill-item aws">Elastic Load Balancer (ELB)</span>
+                                <span class="skill-item aws">Elastic Block Storage (EBS)</span>
+                                <span class="skill-item aws">AWS Glue</span>
+                                <span class="skill-item aws">Amazon Bedrock</span>
+                                <span class="skill-item aws">Amazon Redshift</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4>💻 Programming</h4>
+                            <div class="skill-list">
+                                <span class="skill-item">Python</span>
+                                <span class="skill-item">Bash</span>
+                                <span class="skill-item">YAML</span>
+                                <span class="skill-item">JSON</span>
+                                <span class="skill-item">SQL</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4>📊 Monitoring</h4>
+                            <div class="skill-list">
+                                <span class="skill-item">Prometheus</span>
+                                <span class="skill-item">Grafana</span>
+                                <span class="skill-item">Splunk</span>
+                                <span class="skill-item">ELK Stack</span>
+                                <span class="skill-item">CloudWatch</span>
+                            </div>
+                        </div>
+                    </div>
                     
-                    <h4>Key Achievements:</h4>
-                    <ul>
-                        <li>Achieved high accuracy in converting handwritten and hard form medical records.</li>
-                        <li>Enhanced speed, converting images to text within seconds.</li>
-                        <li>Implemented custom script automation for data preprocessing.</li>
-                        <li>Optimized hyperparameters to improve OCR model performance.</li>
-                        <li>Conducted manual & automated testing to ensure accuracy.</li>
-                    </ul>
-
-                    <h4>Skills & Technologies:</h4>
-                    <p><strong>Python, Unix, OCR, Image Processing, Manual & Automated Testing</strong></p>
-
-                    <h4>Company Address:</h4>
-                    <p>📍 Road No 13, Koppole Main Road, Opp. Anjaneya Swamy Temple, Koppole, Ongole, Narasa Puram, Andhra Pradesh 523001</p>
-                </div>
-
-                <!-- "See More" Button -->
-                <button class="see-more-btn" onclick="toggleContent(this)">See More</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- ---------------- projects HTML Code-------------- -->
-<div id="projects">
-    <div class="container">
-        <h1 class="sub-title">My Projects</h1>
-        <div class="project-list">
-            <!-- Project 1 -->
-            <div class="project" id="project-1">
-                <a href="https://github.com/arumullayaswanth/jenkins-tomcat-deployment-project.git" target="_blank">
-                    <img src="images/4.png" alt="End-to-End CI/CD Deployment on AWS with Jenkins & Terraform ">
-                </a>
-                <div class="layer">
-                    <h3>End-to-End CI/CD Deployment on AWS with Jenkins & Terraform </h3>
-                    <p>Description:
-                        Designed and implemented a fully automated CI/CD pipeline to deploy a Java-based web application on an Apache Tomcat server using Jenkins, Terraform, and AWS cloud services. This project focused on infrastructure automation, continuous integration, and continuous deployment to deliver applications more efficiently and reliably.</p>
-                    <a href="https://github.com/arumullayaswanth/jenkins-tomcat-deployment-project.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>    
-                </div>
-            </div>
-            <!-- Project 2 -->
-            <div class="project" id="project-2">
-                    <!-- Wrap the image with a link -->
-                <a href="https://github.com/arumullayaswanth/Fullstack-nodejs-ecs-fargate-deployment.git" target="_blank">
-                    <img src="images/6.png" alt="Fullstack Node.js Application Deployment on AWS ECS Fargate using Terraform">
-                </a>
-                <div class="layer">
-                    <h3>Fullstack Node.js Application Deployment on AWS ECS Fargate using Terraform</h3>
-                    <p>🚀 Containerized and deployed a fullstack Node.js application on AWS ECS Fargate using Docker, creating a fully serverless, auto-scalable, and highly available cloud-native architecture.</p>
-                    <p>🔄 Implemented CI/CD pipelines for automated Docker image builds and Amazon ECR integration, enabling seamless deployment across frontend, backend, and database services.</p>
-                    <p>🔧 Provisioned cloud infrastructure with Terraform, including ECS services, ECR repositories, IAM roles, VPC networking, and ALBs, following Infrastructure as Code (IaC) best practices.</p>
-                    <p>🌐 Configured DNS routing via Route 53, ensuring reliable communication between services and secure access to Amazon RDS with support for zero-downtime deployments.</p>
-                    <a href="https://github.com/arumullayaswanth/Fullstack-nodejs-ecs-fargate-deployment.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>    
-                </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="project" id="project-3">
-                <a href="https://github.com/arumullayaswanth/Three-Tier-AWS-Architecture-project.git" target="_blank">
-                    <img src="images/3.png" alt="Cloud-Based Web Application Deployment">
-                </a>
-                <div class="layer">
-                    <h3>Three-Tier Web Application Deployment on AWS with Load Balancing and Aurora Database</h3>
-                    <p> ✅ Designed and deployed a secure, scalable three-tier web application architecture on AWS using EC2, ALB, ASG, Route 53, ACM, and Aurora MySQL, 
-                        ensuring high availability, fault tolerance, and optimized performance across multiple availability zones.☁️💻</p>
-                    <a href="https://github.com/arumullayaswanth/Three-Tier-AWS-Architecture-project.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>    
-                </div>
-            </div>
-            <!-- Project 4 -->
-            <div class="project" id="project-4">
-                <a href="https://github.com/arumullayaswanth/ec2-to-rds-migrate.git" target="_blank">
-                    <img src="images/5.png" alt="EC2 to RDS Migration">
-                </a>
-                <div class="layer">
-                    <h3>EC2 to RDS Migration Using AWS DMS with Infrastructure as Code (Terraform)                    </h3>
-                    <p>✅ Automated MySQL database migration from EC2 to Amazon RDS using Terraform and AWS DMS, reducing manual effort and ensuring minimal downtime.</P>
-                    <P>✅ Provisioned and managed cloud infrastructure using Infrastructure as Code (IaC) with Terraform to deploy EC2, RDS, and DMS resources consistently and efficiently.</P>
-                    </p>
-                    <a href="https://github.com/arumullayaswanth/ec2-to-rds-migrate.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-
-            <!-- Project 5 (Initially Hidden) -->
-            <div class="project" id="project-5" style="display: none;">
-                <a href="https://github.com/arumullayaswanth/aws-s3-cloudfront-lambda-automation.git" target="_blank">
-                    <img src="images/7.png" alt=" AWS Cloud Project – Static Website Hosting with Automation">
-                </a>
-                <div class="layer">
-                    <h3> AWS Cloud Project – Static Website Hosting with Automation</h3>
-                    <p>✅ Designed and deployed a static website using Amazon S3 with public access configuration and versioning for reliable content management.</p>
-                    <p>🚀 Integrated AWS CloudFront as a CDN to improve global content delivery performance, configuring custom cache policies for optimized TTL settings.</p>
-                    <p>🔁 Automated CloudFront cache invalidation using AWS Lambda and IAM roles to ensure real-time content updates upon every code deployment to S3.</p>
-                    <a href="https://github.com/arumullayaswanth/aws-s3-cloudfront-lambda-automation.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>    
-                </div>
-            </div>
-
-
-            <!-- Project 6 (Initially Hidden) -->
-            <div class="project" id="project-6" style="display: none;">
-                <a href="https://github.com/arumullayaswanth" target="_blank">
-                    <img src="images/2.png" alt="Data Pipeline Implementation">
-                </a>
-                <div class="layer">
-                    <h3>Data Pipeline Implementation</h3>
-                    <p>Data Pipeline Implementation – Designed a scalable ETL pipeline with AWS Glue, PySpark, and S3 to process, store, and catalog data, optimizing performance via CloudWatch and automating workflows, reducing manual effort by 90%. 📊🚀</p>
-                    <a href="https://github.com/arumullayaswanth" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>    
-                </div>
-            </div>
-
-            <div class="project" id="project-7" style="display: none;">
-                <a href="https://github.com/arumullayaswanth/Smart-Robot-Car-Using-Arduion" target="_blank">
-                    <img src="images/1.png" alt="Smart Robot Car Using Arduino">
-                </a>
-                <div class="layer">
-                    <h3>Arduino-Powered Intelligent Robotic Car</h3>
-                    <p>Developed a smart robotic car using Arduino...</p>
-                    <a href="https://github.com/arumullayaswanth/Smart-Robot-Car-Using-Arduion" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <div class="certifications">
+                        <h4>🏆 Certifications</h4>
+                        <div class="cert-card">
+                            <div class="cert-icon">🎖️</div>
+                            <div class="cert-info">
+                                <h5>AWS Certified Solutions Architect</h5>
+                                <p>Amazon Web Services</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Button to reveal more projects -->
-        <a href="javascript:void(0)" class="btn" id="see-more" onclick="showMoreProjects()">See more</a>
-    </div>
-</div>
-
-
-
-<!-- ---------------- Contact HTML Code-------------- -->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-envelope"></i> yaswanth.arumulla@gmail.com</p>
-                <p><i class="fa-solid fa-phone"></i> +91 9959148343</p>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/yaswanth-arumulla" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/arumullayaswanth" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://x.com/?lang=en&mx=2" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-                <a href="images/yaswanth-Resume.pdf" download class="btn btn2">Download Resume</a>
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Journey</span>
+                <h2 class="section-title">Professional Experience</h2>
+                <p class="section-subtitle">Building robust solutions and optimizing workflows</p>
             </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
+            
+            <div class="timeline">
+                <!-- Experience 1: Skyline Software Solutions -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="experience-card">
+                            <div class="card-header">
+                                <div class="company-info">
+                                    <h3>Software Engineer</h3>
+                                    <h4>Skyline Software Solutions</h4>
+                                    <div class="duration">
+                                        <span class="date">June 2021 - August 2021</span>
+                                        <span class="location">📍 Ongole, India</span>
+                                    </div>
+                                </div>
+                                <div class="company-logo">
+                                    <img src="images/skyline software solutions.jpeg" alt="Skyline Software Solutions Logo" />
+                                </div>
+                            </div>
+                            
+                            <p class="role-description">
+                                Developed and deployed OCR system for medical transcripts, achieving faster and more accurate transcripts.
+                            </p>
+                            
+                            <div class="achievements">
+                                <h5>Key Achievements:</h5>
+                                <ul>
+                                    <li>Designed and developed Optical Character Recognition (OCR) tool for automating medical transcript conversion</li>
+                                    <li>Achieved high accuracy in converting handwritten and hard form medical records</li>
+                                    <li>Enhanced processing speed, converting images to text within seconds</li>
+                                    <li>Implemented custom word automation for data preprocessing</li>
+                                    <li>Optimized performance through efficient algorithms</li>
+                                    <li>Conducted comprehensive manual & automated testing</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="tech-stack">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">SQL</span>
+                                <span class="tech-tag">Image Processing</span>
+                                <span class="tech-tag">Testing</span>
+                                <span class="tech-tag">Automation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 2: aiOak -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                    <div class="marker-dot"></div>
+                    <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                    <div class="experience-card">
+                        <div class="card-header">
+                        <div class="company-info">
+                            <h3>DevOps Engineer Intern</h3>
+                            <h4>aiOak</h4>
+                            <div class="duration">
+                            <span class="date">June 2024 - November 2024</span>
+                            <span class="location">📍 Remote | Hyderabad, India</span>
+                            </div>
+                        </div>
+                        <div class="company-logo">
+                            <img src="images/aioak.png" alt="Aioak Logo" />
+                        </div>
+                        </div>
+
+                        <p class="role-description">
+                        Developed and maintained CI/CD pipelines, managed AWS infrastructure, and automated provisioning with Terraform and Ansible.
+                        </p>
+
+                        <div class="achievements">
+                        <h5>Key Achievements:</h5>
+                        <ul>
+                            <li>Developed CI/CD pipelines using Jenkins and GitHub.</li>
+                            <li>Managed AWS services like EC2, Lambda, S3, RDS, ELB, EBS, and VPC.</li>
+                            <li>Implemented IaC using Terraform and Ansible.</li>
+                            <li>Containerized apps using Docker and worked with Kubernetes (basic).</li>
+                            <li>Configured IAM policies and automated maintenance tasks.</li>
+                            <li>Monitored systems with CloudWatch, Prometheus, and Grafana.</li>
+                            <li>Documented DevOps processes and best practices for internal use.</li>
+                        </ul>
+                        </div>
+
+                        <div class="tech-stack">
+                        <span class="tech-tag">Jenkins</span>
+                        <span class="tech-tag">GitHub</span>
+                        <span class="tech-tag">AWS</span>
+                        <span class="tech-tag">Terraform</span>
+                        <span class="tech-tag">Ansible</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Kubernetes</span>
+                        <span class="tech-tag">CloudWatch</span>
+                        <span class="tech-tag">Prometheus</span>
+                        <span class="tech-tag">Grafana</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                
+                <!-- Experience 3: Arealis -->
+                 <!-- Experience 2: aiOak -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                    <div class="marker-dot"></div>
+                    <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                    <div class="experience-card">
+                        <div class="card-header">
+                        <div class="company-info">
+                            <h3>Lead DevOps Engineer</h3>
+                            <h4>Arealis</h4>
+                            <div class="duration">
+                            <span class="date">June 2025 - Present</span>
+                            <span class="location">📍 Hybrid | Pune, Maharashtra, India</span>
+                            </div>
+                        </div>
+                        <div class="company-logo">
+                            <img src="images/Arealis.jpeg" alt="Aioak Logo" />
+                        </div>
+                        </div>
+
+                        <p class="role-description">
+                        Led the DevOps strategy and execution for an AI-powered retail analytics platform, deploying scalable AWS infrastructure, managing CI/CD pipelines, and ensuring security, reliability, and performance across cloud-native microservices. Collaborated closely with data and backend teams to automate deployments, monitor real-time pipelines, and enforce infrastructure as code best practices using Terraform and Ansible.
+                        </p>
+
+                        <div class="achievements">
+                        <h5>Key Achievements:</h5>
+                        <ul>
+                            <li>Provisioned a production-grade, fault-tolerant AWS infrastructure using Terraform across EKS, EC2, RDS, and VPCs, enabling real-time retail analytics at scale.</li>
+                            <li>Designed and deployed full CI/CD pipelines via GitHub Actions integrated with ECR, EKS, and Lambda, reducing manual deployment efforts by 90%.</li>
+                            <li>Implemented secure, autoscaling Kubernetes workloads on Amazon EKS with Helm, pod autoscaling, and RBAC, ensuring high availability and compliance.</li>
+                            <li>Built a unified observability stack combining Prometheus, Grafana, and AWS CloudWatch, improving incident detection and response times by 60%.</li>
+                            <li>Established automated backup and disaster recovery strategies using RDS snapshots, S3 versioning, and CloudFormation templates, ensuring less then 10-minute RTO and minimal data loss.</li>
+                        </ul>
+                        </div>
+
+                        <div class="tech-stack">
+                        <span class="tech-tag">Jenkins</span>
+                        <span class="tech-tag">GitHub</span>
+                        <span class="tech-tag">AWS</span>
+                        <span class="tech-tag">Terraform</span>
+                        <span class="tech-tag">Ansible</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Kubernetes</span>
+                        <span class="tech-tag">CloudWatch</span>
+                        <span class="tech-tag">Prometheus</span>
+                        <span class="tech-tag">Grafana</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-    </div>
-    <div class="copyright">
-        <p><i class="fa-solid fa-copyright"></i> copyright 2025 Arumulla Yaswanth Reddy <i class="fa-solid fa-heart"></i> All rights reserved.</p>
-    </div>
-</div>
+    </section>
 
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Showcasing my expertise in DevOps and cloud technologies</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-icon">🚀</div>
+                            <h4>End-to-End DevOps Pipeline</h4>
+                            <p>Complete CI/CD automation with AWS</p>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>End-to-End DevOps Projec</h3>
+                            <div class="project-status">Featured</div>
+                        </div>
+                        <p>Comprehensive DevOps pipeline implementation with automated testing, deployment, and monitoring using Jenkins, Docker, and AWS services.</p>
+                        <div class="project-tech">
+                            <span>Jenkins</span>
+                            <span>Tomcat</span>
+                            <span>AWS</span>
+                            <span>Terraform</span>
+                            <span>s3</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/arumullayaswanth/Terraform-jenkins-tomcat-deployment-project.git" target="_blank" class="project-link">
+                                <span>View Details</span>
+                                <div class="link-arrow">→</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-icon">🐳</div>
+                            <h4>Cloud Native App</h4>
+                            <p>ECS Fargate deployment</p>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Cloud Native Application</h3>
+                        </div>
+                        <p>Containerized application deployment using AWS ECS Fargate with automated scaling and comprehensive monitoring.</p>
+                        <div class="project-tech">
+                            <span>ECS</span>
+                            <span>Fargate</span>
+                            <span>Docker</span>
+                            <span>CloudWatch</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/arumullayaswanth/Fullstack-nodejs-ecs-fargate-deployment.git" target="_blank" class="project-link">
+                                <span>View Details</span>
+                                <div class="link-arrow">→</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-icon">🏗️</div>
+                            <h4>3-Tier Architecture</h4>
+                            <p>Scalable web application</p>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>AWS 3-Tier Architecture</h3>
+                        </div>
+                        <p>Highly available and scalable web application architecture using AWS services with load balancing and auto-scaling.</p>
+                        <div class="project-tech">
+                            <span>EC2</span>
+                            <span>RDS</span>
+                            <span>ALB</span>
+                            <span>Auto Scaling</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/arumullayaswanth/Three-Tier-AWS-Architecture-project.git" target="_blank" class="project-link">
+                                <span>View Details</span>
+                                <div class="link-arrow">→</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-icon">🔄</div>
+                            <h4>Database Migration</h4>
+                            <p>EC2 to RDS migration</p>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Database Migration Project</h3>
+                        </div>
+                        <p>Seamless migration of database from EC2 instance to AWS RDS with zero downtime and data integrity assurance.</p>
+                        <div class="project-tech">
+                            <span>RDS</span>
+                            <span>DMS</span>
+                            <span>MySQL</span>
+                            <span>Backup</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/arumullayaswanth/ec2-to-rds-migrate.git" class="project-link">
+                                <span>View Details</span>
+                                <div class="link-arrow">→</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Let's Connect</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Ready to discuss your next project or opportunity</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>Let's work together</h3>
+                        <p>I'm always interested in new opportunities and exciting projects. Let's discuss how we can work together.</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">📧</div>
+                                <div class="method-info">
+                                    <span class="method-label">Email</span>
+                                    <a href="mailto:yaswanth.arumulla@gmail.com">yaswanth.arumulla@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">📱</div>
+                                <div class="method-info">
+                                    <span class="method-label">Phone</span>
+                                    <a href="tel:+919999944343">+91 99999-44343</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">📍</div>
+                                <div class="method-info">
+                                    <span class="method-label">Location</span>
+                                    <span>India</span>
+                                </div>
+                            </div>
+                        </div>
+                        
 
+                        <!-- Include this in your <head> section -->
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+                        <!-- Social links with icons -->
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/yaswanth-arumulla/" class="social-link linkedin" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://www.github.com/arumullayaswanth" class="social-link github" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.twitter.com/" class="social-link twitter" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://www.facebook.com/" class="social-link facebook" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" class="social-link instagram" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.youtube.com/" class="social-link youtube" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                        
+                        <a href="images/Resume-yaswanth.pdf" class="btn btn-primary download-resume">
+                            <span>Download Resume</span>
+                            <div class="btn-arrow">↓</div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-header">
+                            <h3>Send me a message</h3>
+                            <p>I'll get back to you within 24 hours</p>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="name">Your Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Your Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Your Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <span>Send Message</span>
+                            <div class="btn-arrow">→</div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <span>Y</span>
+                            <div class="logo-circuit"></div>
+                        </div>
+                        <span>Yaswanth Reddy Arumulla</span>
+                    </div>
+                    <p>DevOps Engineer passionate about automation and cloud technologies.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Navigation</h4>
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#experience">Experience</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Connect</h4>
+                        <a href="https://www.linkedin.com/in/yaswanth-arumulla/">LinkedIn</a>
+                        <a href="https://www.github.com/arumullayaswanth">GitHub</a>
+                        <a href="https://www.twitter.com/">Twitter</a>
+                        <a href="mailto:yaswanth.arumulla@gmail.com">Email</a>
+                        <a href="https://www.instagram.com/">Instagram</a>
+                        <a href="https://www.facebook.com/">Facebook</a>
+                        <a href="https://www.youtube.com/">YouTube</a>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Yaswanth Reddy Arumulla. All rights reserved.</p>
+                
+            </div>
+        </div>
+    </footer>
 
-
-<!-- ------------------javascript---------------- -->
-<script>
-    /*--------------------About Me javascript Code----------------*/
-
-    var tablinks = document.getElementsByClassName("tab-links")
-    var tabcontents = document.getElementsByClassName("tab-contents")
-
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link")
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab")
-        }
-        event.currentTarget.classList.add("active-link")
-        document.getElementById(tabname).classList.add("active-tab")
-    }
-
-    /*------------------Experience javascript Code----------------*/
-
-    function toggleContent(button) {
-    let content = button.previousElementSibling; // Select .more-content
-
-    if (content.style.display === "block") {
-        content.style.display = "none";
-        button.textContent = "See More"; // Change button text
-    } else {
-        content.style.display = "block";
-        button.textContent = "See Less"; // Change button text
-    }
-}
-
-
-/*------------------Projects javascript Code---------------------*/
-
-
-    // Function to display more projects when "See more" is clicked
-  function showMoreProjects() {
-    // Show the remaining projects
-    document.getElementById("project-5").style.display = "block";
-    document.getElementById("project-6").style.display = "block";
-    document.getElementById("project-7").style.display = "block";
-    
-    // Hide the "See more" button
-    document.getElementById("see-more").style.display = "none";
-}
-
-
-  
-
-/*------------------Contact javascript Code---------------------*/
-</script>
-
-
-
-<!---------------------javascript for small screens------------>
-<script>
-    var sidemenu = document.getElementById("sidemenu");
-
-    function openmenu(){
-        sidemenu.style.right = "0"
-    }
-    function closemenu(){
-        sidemenu.style.right = "-220px";
-    }
-
-
-</script>
-<!---------------------Message for small screens------------>
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzJ0rYj0ZvuWFaENAVLHlf2Rd78J-emEDaoaxpRBTfbcri-jsX_24qwPffYBySQX1U/exec';
-    const form = document.forms['submit-to-google-sheet'];
-    const msg = document.getElementById("msg");
-
-    form.addEventListener('submit', e => {
-        e.preventDefault();
-        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => {
-            msg.innerHTML = "Message sent successfully!";
-            setTimeout(function () {
-                msg.innerHTML = ""; // Clear message after 5 seconds
-                }, 5000);
-                form.reset();
-            })
-            .catch(error => console.error('Error!', error.message))
-        })
-
-</script>
-
-
-
+    <script src="script.js"></script>
 </body>
 </html>
